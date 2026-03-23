@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Caprasimo", serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.nav-container {
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+/* Header spacing for fixed navbar */
+.header-container {
+    padding-top: 100px;
+}
+
+/* Small text */
+.small-text {
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* About Section */
+.about-container {
+    padding: 120px 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text h6 {
+    font-size: 14px;
+    color: #575757;
+    font-family: 'Outfit', sans-serif;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    color: #171615;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    max-width: 700px;
+}
+
+.about-btn {
+    margin-top: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Carousel */
+.carousel-img {
+    height: 300px;
+    width: 300px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 75px;
+}
+.what-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 0px;
+}
+.about-heading{
+  /* display: block; */
+  /* justify-self: center; */
+  color: #171615;
+  font-size: 50px;
+  font-family: 'outfit', sans-serif;
+}
+.about-para{
+  font-size: 1px;
+  /* text-align: center; */
+  color: #2c2528;
+  display: block;
+  font-family: 'outfit', sans-serif;
+}
+.divider{
+  height: 0%;
+  width: 100%;
+  /* display: block; */
+  border: 1px solid black;
+}
+.for-padding{
+    /* padding-top: 100px; */
+    padding: 100px 40px 0px 40px;
+}
+
+
+
+
+/* gallery */
+.gallery-heading{
+    color: #171615;
+    font-size: 45px;
+    font-family: 'outfit', sans-serif;
+    padding-top: 100px;
+}

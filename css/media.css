@@ -1,0 +1,87 @@
+/* Media Queries for Responsive Design */
+ @media (max-width: 992px) {
+ 
+    /* About section: reduce the large side padding */
+    .about-container {
+        padding: 80px 60px;
+    }
+
+    .header-container{
+        padding-top: 53px;
+    }
+    
+    .gallery-heading{
+        font-size: 36px;
+    }
+ 
+    /* Heading size goes down a little */
+    .about-text h2 {
+        font-size: 32px;
+    }
+ 
+    .about-heading {
+        font-size: 38px;
+    }
+ 
+    /* for-padding: reduce large padding on sides */
+    .for-padding {
+        padding: 60px 20px 0px 20px;
+    }
+    .footer-img img{
+        width: 100%;
+    }
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+ 
+    /* Navbar links: reduce gap so they don't overflow */
+    .small-text {
+        font-size: 12px;
+    }
+ 
+    /* About section: remove the heavy side padding completely */
+    .about-container {
+        padding: 60px 20px;
+    }
+ 
+    /* Heading font sizes — smaller on mobile */
+    .about-text h2 {
+        font-size: 24px;
+    }
+ 
+    .about-heading {
+        font-size: 26px;
+    }
+
+    .gallery-heading{
+        font-size: 36px;
+    }
+
+    
+    /* Carousel images: smaller size on mobile */
+    .carousel-img {
+        height: 180px;
+        width: 180px;
+    }
+ 
+    /* carousel track images (not .carousel-img) also need size */
+    .carousel-track img {
+        height: 180px;
+        width: auto;
+    }
+ 
+    /* for-padding: small padding on mobile */
+    .for-padding {
+        padding: 40px 10px 0px 10px;
+    }
+ 
+    /* what-section gap reduce on mobile */
+    .what-section {
+        gap: 20px;
+    }
+
+    .footer-img img{
+        width: 100%;
+    }
+}

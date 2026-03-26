@@ -125,16 +125,18 @@ body {
     border-radius: 35px;
     overflow: hidden;
 }
+/* .flower-div:hover */
 
 .flower{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-.flower-div:hover .flower {
-    transform: scale(1.1);
+.flower-div:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .flower-name{

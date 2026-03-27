@@ -12,6 +12,10 @@ body {
 }
 
 /* Navbar */
+
+nav{
+    width: 100%;
+}
 .nav-container {
     top: 0;
     left: 0;
@@ -71,6 +75,13 @@ body {
     gap: 20px;
     padding-bottom: 75px;
 }
+
+.carousel-track img {
+  height: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .what-section{
   display: flex;
   flex-direction: column;

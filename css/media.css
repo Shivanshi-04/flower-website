@@ -84,4 +84,8 @@
     .footer-img img{
         width: 100%;
     }
+
+    .work-container{
+        padding: 150px 40px;
+    }
 }

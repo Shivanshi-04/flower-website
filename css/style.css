@@ -184,11 +184,18 @@ body {
 }
 
 .services-img-div{
-    height: 830px;
+    height: 730px;
     border-radius: 35px;
     overflow: hidden;
 }
 
 .services-img{
     border-radius: 30px;
+}
+
+.work-container{
+    padding: 150px 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

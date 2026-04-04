@@ -6,6 +6,12 @@
   /* Fix navbar overlap */
   body {
     padding-top: 80px;
+    min-height: 100vh;
+    /* margin: auto; */
+  }
+  .main-hero{
+    /* margin: auto; */
+    padding: auto;
   }
 
   /* Header */
@@ -47,6 +53,14 @@
   .gallery-heading {
     font-size: 32px;
   }
+
+  .services-img-div{
+    height: 430px;
+  }
+
+  /* .services-img-div img{
+    height: 400px;
+  } */
 }
 
 
@@ -131,5 +145,25 @@
   /* Footer */
   .footer-img img {
     width: 100%;
+  }
+  .hero {
+    overflow: visible;
+  }
+
+  .text {
+    position: static;   /* ❗ remove absolute */
+    transform: none;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+
+  .services-img-div {
+    width: 100%;
+    transform: none;
+  }
+
+  .services-img {
+    width: 100%;
+    height: auto;
   }
 }

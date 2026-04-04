@@ -183,6 +183,7 @@ nav{
 .services{
     color: #2c2528;
 }
+
 .services-heading{
     font-size: 45px;
     font-family: 'outfit', sans-serif;
@@ -195,15 +196,52 @@ nav{
 }
 
 .services-img-div{
-    height: 730px;
+    /* width: 100%; */
+    height: 430px;
     border-radius: 35px;
+    position: relative;
+    z-index: 1;
     overflow: hidden;
+    transition: all 0.5s ease;
+}
+.hero{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
-.services-img{
+.services-img-div img{
+    width: 100%;
+    height: 430px;
     border-radius: 30px;
+    object-fit: cover;
+    transition: all 0.5s ease;
 }
 
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%) translateX(-100%);
+    opacity: 0;
+    transition:all 0.5s ease;
+}
+
+.hero:hover .services-img-div{
+    transform: translateX(50%);
+    width: 60%;
+}
+
+.hero:hover .services-img-div img{
+    width: 60%;
+    height: 430px;
+    transform: translateX(70%);
+}
+
+.hero:hover .text{
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+}
 .work-container{
     padding: 150px 174px;
     display: flex;

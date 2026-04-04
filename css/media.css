@@ -82,6 +82,10 @@
    =============================== */
 @media (max-width: 576px) {
 
+  .services-heading{
+    font-size: 36px;
+  }
+
   /* Navbar */
   .small-text {
     font-size: 12px;

@@ -63,6 +63,12 @@
   .about-main-heading{
     font-size: 40px;
   }
+
+  /* contact */
+
+  .contact-detail-text {
+        font-size: 16px;
+    }
 }
 
 
@@ -93,6 +99,14 @@
   
   .flower-img {
       height: 300px;
+    }
+
+    .contact-row {
+        gap: 40px 0;
+    }
+ 
+    .contact-detail-text {
+        font-size: 15px;
     }
 }
 
@@ -183,5 +197,30 @@
 
     .about-main-heading {
       font-size: 1.4rem;
+    }
+
+    .contact-section {
+        padding: 20px 0 60px;
+    }
+ 
+    .contact-input {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+ 
+    .contact-textarea {
+        height: 130px;
+    }
+ 
+    .contact-detail-text {
+        font-size: 15px;
+    }
+ 
+    .contact-detail-label {
+        font-size: 11px;
+    }
+ 
+    .contact-social-link {
+        font-size: 14px;
     }
 }

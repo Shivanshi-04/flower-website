@@ -23,6 +23,25 @@ nav{
     background-color: white;
 }
 
+/* This clips the logo so it appears to come from behind the image */
+.header-container {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Logo image gets the animation */
+.header-container .logo-animate {
+    animation: logoReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Big image fades in slightly after logo */
+
+.header-container .image-animate {
+    opacity: 0;
+    animation: imageFadeIn 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
 
 /* Small text */
 .small-text {
@@ -78,8 +97,14 @@ nav{
 
 .carousel-track img {
   height: 250px;
+  border-radius: 30px;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+.carousel-track img:hover {
+  transform: scale(.95);
+  transition: transform 0.3s ease;
 }
 
 .what-section{
@@ -96,6 +121,7 @@ nav{
   font-size: 50px;
   font-family: 'Outfit', sans-serif;
 }
+
 .about-para{
   font-size: 16px;
   text-align: center;
@@ -123,6 +149,8 @@ nav{
     color: #171615;
     font-size: 48px;
     font-family: 'Outfit', sans-serif;
+    animation: galleryHeading 1.5s ease-out forwards;
+    animation-delay: 0.3s;
     /* padding-top: 10px; */
 }
 

@@ -224,3 +224,36 @@
         font-size: 14px;
     }
 }
+
+
+/* HEADER LOGO ANIMATION */
+
+@keyframes logoReveal {
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes imageFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes galleryHeading {
+  0% {
+    transform: translateX(920px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

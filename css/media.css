@@ -54,22 +54,14 @@
     height: 430px;
   }
 
-  /* .services-img-div img{
-    height: 400px;
-  } */
-
   /* about */
 
   .about-main-heading{
     font-size: 40px;
   }
-
-  /* contact */
-
-  .contact-detail-text {
-        font-size: 16px;
-    }
 }
+
+
 
 
 /* ===============================
@@ -108,6 +100,21 @@
     .contact-detail-text {
         font-size: 15px;
     }
+
+
+.hero{
+  overflow: visible;
+}
+.text {
+        position: static;
+        transform: none;
+        opacity: 1;
+    }
+.services-img{
+  width: 100%;
+    height: 300px;      /* fixed height for tablet */
+    object-fit: cover;
+  }
 }
 
 
@@ -166,12 +173,13 @@
   .footer-img img {
     width: 100%;
   }
+
   .hero {
     overflow: visible;
   }
 
   .text {
-    position: static;   /* ❗ remove absolute */
+    position: static;   /* remove absolute */
     transform: none;
     opacity: 1;
     margin-bottom: 20px;
@@ -179,13 +187,12 @@
 
   .services-img-div {
     width: 100%;
+    height: 250px;      /* smaller height on mobile */
+    object-fit: cover;
     transform: none;
   }
 
-  .services-img {
-    width: 100%;
-    height: auto;
-  }
+
   .about-main-heading{
     font-size: 24px;
   }
@@ -223,8 +230,49 @@
     .contact-social-link {
         font-size: 14px;
     }
-}
+    
 
+    .services-img-div {
+        width: 100%;
+        transform: none;
+    }
+
+    .services-img {
+        width: 100%;
+        height: auto;
+    } 
+  }
+
+
+/* DESKTOP ONLY (≥993px) hover animation only on desktop */
+
+@media (min-width: 993px) {
+
+  /* Text hidden by default — will show on hover */
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%) translateX(-100%);
+    opacity: 0;
+  }
+
+  .hero:hover .services-img-div {
+    transform: translateX(50%);
+    width: 60%;
+  }
+
+  .hero:hover .services-img-div img {
+    width: 60%;
+    height: 430px;
+    transform: translateX(70%);
+  }
+
+  .hero:hover .text {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+  }
+}
 
 /* HEADER LOGO ANIMATION */
 

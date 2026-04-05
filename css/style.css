@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
     padding-top: 80px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -149,6 +150,7 @@ nav{
     color: #171615;
     font-size: 48px;
     font-family: 'Outfit', sans-serif;
+    opacity: 0;
     animation: galleryHeading 1.5s ease-out forwards;
     animation-delay: 0.3s;
     /* padding-top: 10px; */
@@ -238,37 +240,22 @@ nav{
     width: 100%;
 }
 
-.services-img-div img{
+.services-img-div img {
     width: 100%;
+    height: 430px;        /* ✅ add height */
     border-radius: 30px;
     object-fit: cover;
     transition: all 0.5s ease;
 }
 
-.text{
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%) translateX(-100%);
-    opacity: 0;
-    transition:all 0.5s ease;
-}
-
-.hero:hover .services-img-div{
-    transform: translateX(50%);
-    width: 60%;
-}
-
-.hero:hover .services-img-div img{
-    width: 60%;
-    height: 430px;
-    transform: translateX(70%);
-}
-
-.hero:hover .text{
-    transform: translateY(-50%) translateX(0);
+/* Default — visible for mobile */
+.text {
+    position: static;
     opacity: 1;
+    transition: all 0.5s ease;
 }
+
+
 .work-container{
     padding: 150px 174px;
     display: flex;

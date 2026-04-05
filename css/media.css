@@ -5,13 +5,9 @@
 
   /* Fix navbar overlap */
   body {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     min-height: 100vh;
     /* margin: auto; */
-  }
-  .main-hero{
-    /* margin: auto; */
-    padding: auto;
   }
 
   /* Header */
@@ -61,6 +57,12 @@
   /* .services-img-div img{
     height: 400px;
   } */
+
+  /* about */
+
+  .about-main-heading{
+    font-size: 40px;
+  }
 }
 
 
@@ -88,6 +90,10 @@
   .footer-img img {
     width: 100%;
   }
+  
+  .flower-img {
+      height: 300px;
+    }
 }
 
 
@@ -166,4 +172,16 @@
     width: 100%;
     height: auto;
   }
+  .about-main-heading{
+    font-size: 24px;
+  }
+
+  .flower-img {
+      height: 260px;              /* smaller height on mobile */
+      margin-bottom: 0;
+    }
+
+    .about-main-heading {
+      font-size: 1.4rem;
+    }
 }

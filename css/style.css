@@ -94,14 +94,14 @@ nav{
   /* justify-self: center; */
   color: #171615;
   font-size: 50px;
-  font-family: 'outfit', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .about-para{
   font-size: 16px;
   text-align: center;
   color: #2c2528;
   display: block;
-  font-family: 'outfit', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .divider{
   height: 0%;
@@ -122,7 +122,7 @@ nav{
 .gallery-heading{
     color: #171615;
     font-size: 48px;
-    font-family: 'outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     /* padding-top: 10px; */
 }
 
@@ -132,7 +132,7 @@ nav{
 
 .main-heading{
     font-size: 14px;
-    font-family: 'outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #575757;
 }
 
@@ -164,7 +164,7 @@ nav{
 .flower-cost{
     font-size: 14px;
     color: #00000099;
-    font-family: 'outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 
@@ -186,12 +186,12 @@ nav{
 
 .services-heading{
     font-size: 45px;
-    font-family: 'outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #171615;
 }
 
 .services-para{
-    font-family: 'outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #2c2528;
 }
 
@@ -247,4 +247,38 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+/* about */
+
+.about-section {
+    background-color: #fff;
+    padding: 40px 0 60px;
+  }
+
+.about-main-heading{
+    font-size: 40px;
+    color: #171615;
+    font-family: 'outfit', sans-serif;
+    padding: 40px 0;
+}
+
+.flower-img {
+    border-radius: 20px;         /* rounded corners like in the design */
+    overflow: hidden;             /* so image also gets rounded corners */
+    height: 380px;                /* fixed height for all cards */
+    width: 100%;
+  }
+
+.flower-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* ensures image covers the area without distortion */
+    transition: transform 0.3s ease; /* smooth zoom effect on hover */
+  }
+
+.flower-img:hover img {
+    transform: scale(1.05);       /* zoom in slightly on hover */
 }
